@@ -1,0 +1,79 @@
+{
+  "models": [
+    {
+      "name": "AccountCreationModel",
+      "generator": "random(edge_coverage(100))",
+      "startElementId": "100e8400-e29b-41d4-a716-111111111111",
+      "vertices": [
+        {
+          "id": "100e8400-e29b-41d4-a716-111111111111",
+          "name": "v_WelcomePage",
+          "properties": {
+            "x": -56,
+            "y": 103
+          }
+        },
+        {
+          "id": "200e8400-e29b-41d4-a716-222222222222",
+          "name": "v_CreateAccountPage",
+          "properties": {
+            "x": 300,
+            "y": 100
+          }
+        },
+        {
+          "id": "300e8400-e29b-41d4-a716-333333333333",
+          "name": "v_HomePage",
+          "properties": {
+            "x": 723,
+            "y": 101
+          }
+        },
+        {
+          "id": "400e8400-e29b-41d4-a716-444444444444",
+          "name": "v_ErrorPage",
+          "properties": {
+            "x": 299,
+            "y": 405
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "500e8400-e29b-41d4-a716-555555555555",
+          "name": "e_ClickCreateAccount",
+          "sourceVertexId": "100e8400-e29b-41d4-a716-111111111111",
+          "targetVertexId": "200e8400-e29b-41d4-a716-222222222222",
+          "actions": [
+            "clickCreateAccountButton()"
+          ]
+        },
+        {
+          "id": "600e8400-e29b-41d4-a716-666666666666",
+          "name": "e_EnterDetailsAndSubmit",
+          "sourceVertexId": "200e8400-e29b-41d4-a716-222222222222",
+          "targetVertexId": "300e8400-e29b-41d4-a716-333333333333",
+          "actions": [
+            "enterUsername('testuser')",
+            "enterEmail('test@example.com')",
+            "enterPassword('1234567890')",
+            "clickCheckbox()",
+            "clickSignupButton()"
+          ]
+        },
+        {
+          "id": "700e8400-e29b-41d4-a716-777777777777",
+          "name": "e_HandleError",
+          "sourceVertexId": "200e8400-e29b-41d4-a716-222222222222",
+          "targetVertexId": "400e8400-e29b-41d4-a716-444444444444",
+          "actions": [
+            "handleSignupError()"
+          ]
+        }
+      ],
+      "id": "3def6eec-7a5d-4032-a75a-4d2f0a6e5336"
+    }
+  ],
+  "selectedModelIndex": 0,
+  "selectedElementId": "100e8400-e29b-41d4-a716-111111111111"
+}
