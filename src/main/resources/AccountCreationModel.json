@@ -3,10 +3,10 @@
     {
       "name": "AccountCreationModel",
       "generator": "random(edge_coverage(100))",
-      "startElementId": "100e8400-e29b-41d4-a716-111111111111",
+      "startElementId": "100e8400-e29b-41d4-a716-1111",
       "vertices": [
         {
-          "id": "100e8400-e29b-41d4-a716-111111111111",
+          "id": "100e8400-e29b-41d4-a716-1111",
           "name": "v_WelcomePage",
           "properties": {
             "x": -56,
@@ -14,7 +14,7 @@
           }
         },
         {
-          "id": "200e8400-e29b-41d4-a716-222222222222",
+          "id": "200e8400-e29b-41d4-a716-2222",
           "name": "v_CreateAccountPage",
           "properties": {
             "x": 300,
@@ -22,7 +22,7 @@
           }
         },
         {
-          "id": "300e8400-e29b-41d4-a716-333333333333",
+          "id": "300e8400-e29b-41d4-a716-3333",
           "name": "v_HomePage",
           "properties": {
             "x": 723,
@@ -30,7 +30,7 @@
           }
         },
         {
-          "id": "400e8400-e29b-41d4-a716-444444444444",
+          "id": "400e8400-e29b-41d4-a716-4444",
           "name": "v_ErrorPage",
           "properties": {
             "x": 299,
@@ -40,40 +40,30 @@
       ],
       "edges": [
         {
-          "id": "500e8400-e29b-41d4-a716-555555555555",
+          "id": "500e8400-e29b-41d4-a716-5555",
           "name": "e_ClickCreateAccount",
-          "sourceVertexId": "100e8400-e29b-41d4-a716-111111111111",
-          "targetVertexId": "200e8400-e29b-41d4-a716-222222222222",
-          "actions": [
-            "clickCreateAccountButton()"
-          ]
+          "sourceVertexId": "100e8400-e29b-41d4-a716-1111",
+          "targetVertexId": "200e8400-e29b-41d4-a716-2222",
+          "actions": []
         },
         {
-          "id": "600e8400-e29b-41d4-a716-666666666666",
+          "id": "600e8400-e29b-41d4-a716-6666",
           "name": "e_EnterDetailsAndSubmit",
-          "sourceVertexId": "200e8400-e29b-41d4-a716-222222222222",
-          "targetVertexId": "300e8400-e29b-41d4-a716-333333333333",
-          "actions": [
-            "enterUsername('testuser')",
-            "enterEmail('test@example.com')",
-            "enterPassword('1234567890')",
-            "clickCheckbox()",
-            "clickSignupButton()"
-          ]
+          "sourceVertexId": "200e8400-e29b-41d4-a716-2222",
+          "targetVertexId": "300e8400-e29b-41d4-a716-3333",
+          "actions": []
         },
         {
-          "id": "700e8400-e29b-41d4-a716-777777777777",
+          "id": "700e8400-e29b-41d4-a716-7777",
           "name": "e_HandleError",
-          "sourceVertexId": "200e8400-e29b-41d4-a716-222222222222",
-          "targetVertexId": "400e8400-e29b-41d4-a716-444444444444",
-          "actions": [
-            "handleSignupError()"
-          ]
+          "sourceVertexId": "200e8400-e29b-41d4-a716-2222",
+          "targetVertexId": "400e8400-e29b-41d4-a716-4444",
+          "actions": []
         }
       ],
       "id": "3def6eec-7a5d-4032-a75a-4d2f0a6e5336"
     }
   ],
   "selectedModelIndex": 0,
-  "selectedElementId": "100e8400-e29b-41d4-a716-111111111111"
+  "selectedElementId": "100e8400-e29b-41d4-a716-1111"
 }

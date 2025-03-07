@@ -13,7 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>4.14.1</selenium.version>
-        <graphwalker.version>4.3.1</graphwalker.version>
+        <graphwalker.version>4.3.3</graphwalker.version>
         <slf4j.version>1.7.30</slf4j.version>
     </properties>
 
@@ -78,11 +78,20 @@
             <plugin>
                 <groupId>org.graphwalker</groupId>
                 <artifactId>graphwalker-maven-plugin</artifactId>
-                <version>4.3.3</version>
+                <version>${graphwalker.version}</version>
                 <executions>
                     <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>generate-sources</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
                         </goals>
                     </execution>
                 </executions>

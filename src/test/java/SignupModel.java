@@ -4,6 +4,7 @@ import org.graphwalker.java.annotation.AfterElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import base.IOSBaseTestClass;
+import pages.ErrorPage;
 import pages.WelcomePage;
 import pages.SignupPage;
 import pages.HomePage;
@@ -48,9 +49,8 @@ public class SignupModel extends IOSBaseTestClass implements AccountCreationMode
     @Override
     public void v_ErrorPage() {
         logger.info("Verifying Error Page");
-        // Error page implementasyonu
-        // Örnek: ErrorPage errorPage = new ErrorPage(driver);
-        // errorPage.checkOnErrorPage();
+        ErrorPage errorPage = new ErrorPage(driver);
+        errorPage.checkOnErrorPage();
     }
 
     @Override

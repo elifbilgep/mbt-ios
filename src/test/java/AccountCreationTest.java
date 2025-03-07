@@ -10,7 +10,7 @@ public class AccountCreationTest {
     @Test
     public void testAccountCreation() throws IOException {
         TestExecutor executor = new TestExecutor(
-                SimplifiedSignupModel.class
+                SignupModel.class
         );
 
         WebSocketServer server = new WebSocketServer(webSocketPortNumber, executor.getMachine());
